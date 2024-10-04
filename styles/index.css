@@ -11,6 +11,8 @@ body{
 
     --main-color-banner: #F0F0F0;
     --main-color-white: #FFDABB;
+
+    --maing-underline-bege: #FBC9A8 ;
     margin: 0;
 }
 
@@ -120,15 +122,14 @@ footer span{
     margin-bottom: 100px;
 }
 
-.informacaoForms{
+.informacaoForms{ 
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    background-color: #291505;
-    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-}
+ }
 
 .informacoesContato{
+    padding: 20px;
     background-color: var(--main-bg-mulefawn);
     border-radius: 8px 0 0 8px;
 }
@@ -136,9 +137,88 @@ footer span{
 .formulario{
     background-color: var(--main-bg-forms-white);
     border-radius: 0 8px 8px 0;
+    width: 100%;
 }
 
 .contatoLinha{
     display: flex;
     flex-direction: row;
 }
+
+.informacaoCard{
+    width: 90%;
+    background-color: red;
+    display: flex; 
+    flex-direction: row; 
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.contatoLinha{
+    color: var(--main-color-banner);
+    flex-wrap: wrap;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 700;
+    font-weight: 18px;
+}
+
+.endereco{
+    word-break: normal;
+    width: 224px;
+}
+
+.logoBranca{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 50px 0 50px 0;
+}
+
+.hrInformacao{
+    border-top: 1px solid var(--main-bg-santafe);
+    width: 80%;
+    margin: 20px auto;
+}
+
+.formsCard{
+    width: 100%;
+    margin: 20px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: space-evenly;
+}
+
+.inputTextNE{
+    width: 80%;
+    height: 70px;
+    border-width: 1px;
+    border-radius: 8px ;
+    border-color: var(--main-bg-mulefawn);
+}
+
+.inputTextMsg{
+    width: 80%;
+    height: 220px;
+    border-width: 1px;
+    border-radius: 8px ;
+    border-color: var(--main-bg-mulefawn);
+}
+
+.labelText{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 700;
+    font-size: 24px;
+}
+
+.labels{
+    width: 100%;
+}
+
+.entreEmContato{
+    text-decoration: underline 10px var(--maing-underline-bege);
+    font-weight: 700;
+    font-size: 40px;
+}
+
