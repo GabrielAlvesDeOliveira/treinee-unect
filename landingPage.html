@@ -4,6 +4,10 @@
         <meta charset="utf-8">
         <title>Landing Page</title>
         <Link rel="stylesheet" href="styles/index.css"/>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+        <script type="text/javascript" src="/scripts/index.js"></script>
     </head>
     <body>
         <header>
@@ -52,7 +56,23 @@
         </div>
 
         <div id="cafeteria">
-
+            <img class="ondaCafe" src="./img/Cafe onda.svg" alt="imagem de grao de café com efeito de onda" />
+            <div class="cafeteria">
+                <span class="tituloCafe"><h1>CAFETERIA</h1></span>
+                <div class="carrossel">
+                    <img id="flecha-esquerda" onclick="clickEsquerdo()" src="/img/Flecha anterior.svg" alt="flecha para mover o carrossel à esquerda" />
+                    <div id="cards-id" class="cards">
+                        <!-- <div class="card">
+                            <div><img class="imagemCard" src="/img/bolo.png" alt="comida"/></div>
+                            <div>
+                                <div class="tituloCard"><h3>Brigadeiro de capuccino</h3></div>
+                                <div class="textoCard"><p>O brigadeiro de cappuccino é uma das guloseimas que enfeitam o balcão da doceria...</p></div>
+                            </div>
+                        </div> -->
+                    </div>
+                    <img id="flecha-direita" onclick="clickDireito()" src="/img/Flecha Proximo.svg" alt="flecha para mover o carrossel à direita" />
+                </div>
+            </div>
         </div>
 
         <div id="contato">

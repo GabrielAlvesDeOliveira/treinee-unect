@@ -8,11 +8,12 @@ body{
     --main-bg-brown: #57290B;
     --main-bg-hover: #CA8E67;
     --main-bg-forms-white: #F5F3ED;
+    --main-bg-carrossel: #80451F;
 
     --main-color-banner: #F0F0F0;
     --main-color-white: #FFDABB;
 
-    --maing-underline-bege: #FBC9A8 ;
+    --main-underline-bege: #FBC9A8 ;
     margin: 0;
 }
 
@@ -33,8 +34,6 @@ header span{
 }
 
 footer{
-    bottom: 0;
-    position: fixed;
     width: 100%;
     background-color: var(--main-bg-brown);
     display: flex;
@@ -220,6 +219,7 @@ footer span{
 }
 .entreEmContato{
     text-decoration: underline 10px var(--maing-underline-bege);
+    font-family: "Cormorant Garamond", serif;
     font-weight: 700;
     font-size: 40px;
 }
@@ -244,7 +244,88 @@ footer span{
 }
 
 .tituloNos{
-    text-decoration: underline 10px var(--maing-underline-bege);
+    text-decoration: underline 10px var(--main-underline-bege);
+    font-family: "Cormorant Garamond", serif;
     font-weight: 700;
     font-size: 20px;
+}
+
+.ondaCafe{
+    width: 100%;
+    margin-bottom:-10% ;
+    z-index: 1;
+}
+
+#cafeteria{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20vh;
+}
+
+.cafeteria{
+    background-color: var(--main-bg-carrossel);
+    width: 100%;
+    z-index: 0;
+    padding-top: 10%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 5%;
+}
+
+.tituloCafe{
+    text-decoration: underline 2px var(--main-bg-santafe);
+    font-family: "Cormorant Garamond", serif;
+    font-weight: 700;
+    font-size: 20px;
+    color: var(--main-color-banner);
+}
+
+.carrossel{
+    display: flex;
+}
+
+#flecha-esquerda{
+    margin: 20px;
+    cursor: pointer;
+}
+
+#flecha-direita{
+    margin: 20px;
+    cursor: pointer;
+}
+
+.card{
+    display: flex;
+    flex-direction: column;
+    background-color: var(--main-color-banner);
+    justify-content: center;
+    border-radius: 8px;
+    padding: 10px;
+    width: 345px;
+    margin: 20px;
+}
+
+.tituloCard{
+    font-size: 16px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 700;
+}
+
+.textoCard{
+    font-size: 14px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 400;
+    word-break: break-all;
+}
+
+.cards{
+    display: flex;
+}
+
+.imagemCard{
+    border-radius: 8px; 
+    width: 100%;
 }
