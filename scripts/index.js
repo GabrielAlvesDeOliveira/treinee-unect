@@ -24,12 +24,23 @@ var dataJson = [
         "descricao": "O sorvete em versão de café pode ser aproveitado sozinho ou com um pedacinho de bolo no fim..."
     }
 ]
+var tela = window.innerWidth
 var minId = 0
-var maxId = 2
+var maxId = tela > 1200 ? 2 : 0
 var carrossel = []
-// window.addEventListener("resize", function(){
-//     
-// })
+window.addEventListener("resize", function(){
+  tela = window.innerWidth
+  console.log(tela) 
+  if(tela > 1200){
+    if(carrossel.length < 3){
+
+    }
+  } else{
+    if(carrossel.length == 3){
+        
+    }
+  } 
+})
 
 function clickEsquerdo() {
     deleteCards()
@@ -66,6 +77,7 @@ function criarCard(id){
 }
 
 window.onload = function() {
+    console.log(window.innerWidth)
     dataJson.forEach(e => {
         if(e.id >= minId && e.id <= maxId) criarCard(e.id);
     })

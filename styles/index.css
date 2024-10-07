@@ -17,12 +17,16 @@ body{
     margin: 0;
 }
 
-header{
+.header-desktop{
     display: flex;
     align-items: center;
     justify-content: space-around;
     height: 100px;
     background-color: var(--main-bg-brown);
+}
+
+.header-responsive{
+    display: none;
 }
 
 header span{
@@ -328,4 +332,65 @@ footer span{
 .imagemCard{
     border-radius: 8px; 
     width: 100%;
+}
+
+@media (max-width: 1200px) {
+    footer{
+        flex-direction: column;
+        align-items: start;
+        padding: 15px;
+    }
+
+    .subtitulo{
+        display: none;
+    }
+
+    .banner-vazio{
+        display: none;
+    }
+
+    .banner-texto{
+        width: 100%;
+    }
+
+    .informacoesContato{
+        display: none;
+    }
+
+    .botao{
+        margin: 1vh 0 1vh 0;
+    }
+
+    .direitaSobreNos{
+        display: none;
+    }
+
+    .esquerdaSobreNos{
+
+    }
+
+    .botaoFC{
+        display: flex;
+        justify-content: center;
+    }
+
+    #cafeteria{
+        margin-top: 2vh;
+    }
+
+    .textoNosDiv{
+        width: 100%;
+    }
+
+    .header-desktop{
+        display: none;
+    }
+
+    .header-responsive{
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        height: 100px;
+        background-color: var(--main-bg-brown);
+    }
 }
