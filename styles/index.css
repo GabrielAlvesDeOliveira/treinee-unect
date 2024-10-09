@@ -333,6 +333,45 @@ footer span{
     border-radius: 8px; 
     width: 100%;
 }
+a{
+    text-decoration: none;
+}
+
+.menu{
+    background-color: var(--main-bg-brown);
+    display: flex;
+    justify-content: space-between;
+    padding: 30px;
+}
+
+.opcoes-menu{
+    background-color: var(--main-bg-forms-white);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.opcao-menu{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 700;
+    size: 24px;
+    background-color: var(--main-bg-white);
+    margin: 10px;
+    border-radius: 10px;
+    padding: 18px 10px 18px 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 70%;
+    box-shadow: 5px 5px 5px 5px #1F0C0033 ;
+}
+
+.header-menu{
+    display: none;
+    flex-direction: column; 
+    position: fixed;
+    width: 100%;
+}
 
 @media (max-width: 1200px) {
     footer{
@@ -365,10 +404,6 @@ footer span{
         display: none;
     }
 
-    .esquerdaSobreNos{
-
-    }
-
     .botaoFC{
         display: flex;
         justify-content: center;
@@ -393,4 +428,5 @@ footer span{
         height: 100px;
         background-color: var(--main-bg-brown);
     }
+
 }

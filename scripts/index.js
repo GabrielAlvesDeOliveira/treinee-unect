@@ -30,16 +30,24 @@ var maxId = tela > 1200 ? 2 : 0
 var carrossel = []
 window.addEventListener("resize", function(){
   tela = window.innerWidth
-  console.log(tela) 
+  deleteCards()
   if(tela > 1200){
+    console.log(carrossel)
     if(carrossel.length < 3){
-
+        if (carrossel[carrossel.length-1].id == dataJson[dataJson.length-1].id){
+            carrossel.push(dataJson[0].id)
+            carrossel.push(dataJson[1].id)
+        }
+        carrossel.push(+carrossel[0]+1 > 3 ? 0 : +carrossel[0]+1)
+        carrossel.push(+carrossel[1]+1 > 3 ? 0 : +carrossel[1]+1)
     }
   } else{
-    if(carrossel.length == 3){
-        
+      if(carrossel.length >= 3){
+        carrossel.pop()
+        carrossel.pop()
     }
   } 
+  carrossel.map(i => {dataJson.forEach(e => {e.id == i ? criarCard(i) : undefined})})  
 })
 
 function clickEsquerdo() {
@@ -76,8 +84,23 @@ function criarCard(id){
     cardContainer.appendChild(cardTemplate);
 }
 
+function abrirMenu(){
+    var icone_menu = document.querySelector(".header-responsive")
+    var header_menu = document.querySelector(".header-menu")
+
+    icone_menu.style.display = "none"
+    header_menu.style.display = "flex"
+}
+
+function fecharMenu(){
+    var icone_menu = document.querySelector(".header-responsive")
+    var header_menu = document.querySelector(".header-menu")
+
+    icone_menu.style.display = "flex"
+    header_menu.style.display = "none"
+}
+
 window.onload = function() {
-    console.log(window.innerWidth)
     dataJson.forEach(e => {
         if(e.id >= minId && e.id <= maxId) criarCard(e.id);
     })

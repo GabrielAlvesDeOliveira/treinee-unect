@@ -12,10 +12,10 @@
     <body>
         <header>
             <div class="header-desktop">
-                <span>Sobre nós</span>
-                <span>Cafeteria</span>
+                <a href="#sobre-nos"><span>Sobre nós</span></a>
+                <a href="#cafeteria"><span>Cafeteria</span></a>
                 <span><img src="img/Logo.svg" alt="Logo do palavras cafeinadas"></span>
-                <span>Contato</span>
+                <a href="#contato"><span>Contato</span></a>
                 <div class="numero">
                     <img src="img/Icon - Phone.svg" alt="ïcone de um telefone"/>
                     <span>19-991256972</span>
@@ -24,7 +24,19 @@
             <div class="header-responsive">
                 <img src="img/logo_escura.svg" alt="logo do palavras cafeinadas" width="25px"/>
                 <img src="img/Palavras Cafeinadas.svg" alt="palavras cafeinada" />
-                <img src="img/Menu-mob.svg" alt="menu" />
+                <img src="img/Menu-mob.svg" alt="menu" onclick="abrirMenu()"/>
+            </div>
+            <div class="header-menu">
+                <div class="menu">
+                    <img src="img/logo_escura.svg" alt="logo do palavras cafeinadas" width="25px"/>
+                    <img src="img/x.svg" alt="Icone para fechar o menu" width="25px" onclick="fecharMenu()"/>
+                </div>
+                <div class="opcoes-menu">
+                    <div class="opcao-menu"><a href="#banner">Home</a></div>
+                    <div class="opcao-menu"><a href="#sobre-nos">Sobre Nós</a></div>
+                    <div class="opcao-menu"><a href="#cafeteria">Cafeteria</a></div>
+                    <div class="opcao-menu"><a href="#contato">Contato</a></div>
+                </div>
             </div>
         </header>
 
@@ -34,7 +46,9 @@
                 <span class="titulo">Leia acompanhado de uma culinária de qualidade</span>
                 <span class="subtitulo">Aonde a paixão por livros e o amor por café sempre tem lugar a mesa.</span>
                 <div class="botaoDiv">
-                    <button class="botao">VENHA CONHECER<img src="img/Seta.svg" alt="seta apontando para a direita"/></button>
+                    <a href="#cafeteria">
+                        <button class="botao">VENHA CONHECER<img src="img/Seta.svg" alt="seta apontando para a direita"/></button>
+                    </a>
                 </div>
             </div>
             <div class="banner-vazio"></div>
@@ -53,7 +67,9 @@
                         </p>
                     </div>
                     <div class="botaoFC">
-                        <button class="botao">FALE CONOSCO<img src="img/Seta.svg" alt="seta apontando para a direita"/></button>
+                        <a href="#contato">
+                            <button class="botao">FALE CONOSCO<img src="img/Seta.svg" alt="seta apontando para a direita"/></button>
+                        </a>
                     </div>
                 </div>
                 <div class="direitaSobreNos">
