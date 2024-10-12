@@ -1,25 +1,25 @@
 var dataJson = [
     {
         "id": 0,
-        "foto": "./img/brigadeiro.png",
+        "foto": "brigadeiro.png",
         "titulo": "Brigadeiro de capuccino",
         "descricao": "O brigadeiro de cappuccino é uma das guloseimas que enfeitam o balcão da doceria..."
     },
     {
         "id": 1,
-        "foto": "./img/pao-de-mel.png",
+        "foto": "pao-de-mel.png",
         "titulo": "Pão de Mel",
         "descricao": "O brigadeiro de capuccino combina o doce tradicional com um toque suave..."
     },
     {
         "id": 2,
-        "foto": "./img/bolo.png",
+        "foto": "bolo.png",
         "titulo": "Bolo de chocolate",
         "descricao": "O bolo de chocolate é uma das sobremesas mais pedidas da Cafeteira, ele possui um recheio com..."
     },
     {
         "id": 3,
-        "foto": "./img/sorvete.png",
+        "foto": "sorvete.png",
         "titulo": "Sorvete de Café",
         "descricao": "O sorvete em versão de café pode ser aproveitado sozinho ou com um pedacinho de bolo no fim..."
     }
@@ -75,7 +75,7 @@ function criarCard(id){
     cardTemplate.classList.add('card')
     cardTemplate.id = `card-${id}`
     cardTemplate.innerHTML = `
-        <img id="img-${id}" class="imagemCard" src="${dataJson[id].foto}" alt="${dataJson[id].titulo}">
+        <img id="img-${id}" class="imagemCard" src="img/${dataJson[id].foto}" alt="${dataJson[id].titulo}">
         <div>
             <div id="titulo-${id}" class="tituloCard"><h3>${dataJson[id].titulo}</h3></div>
             <div id="descricao-${id}" class="textoCard"><p>${dataJson[id].descricao}</p></div>
