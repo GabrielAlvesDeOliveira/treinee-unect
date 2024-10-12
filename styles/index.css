@@ -222,7 +222,7 @@ footer span{
     padding: 0 13% 0 13%;
 }
 .entreEmContato{
-    text-decoration: underline 10px var(--maing-underline-bege);
+    text-decoration: underline var(--main-underline-bege);
     font-family: "Cormorant Garamond", serif;
     font-weight: 700;
     font-size: 40px;
@@ -248,10 +248,13 @@ footer span{
 }
 
 .tituloNos{
+}
+
+.SobreNos{
     text-decoration: underline 10px var(--main-underline-bege);
     font-family: "Cormorant Garamond", serif;
     font-weight: 700;
-    font-size: 20px;
+    font-size: 40px;
 }
 
 .ondaCafe{
@@ -280,10 +283,13 @@ footer span{
 }
 
 .tituloCafe{
+}
+
+.tituloCafeteria{
     text-decoration: underline 2px var(--main-bg-santafe);
     font-family: "Cormorant Garamond", serif;
     font-weight: 700;
-    font-size: 20px;
+    font-size: 40px;
     color: var(--main-color-banner);
 }
 
@@ -373,6 +379,23 @@ a{
     width: 100%;
 }
 
+#contato-mobile{
+    display: none;
+}
+
+.tituloContatoMobile{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.midiasContato{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 5%;
+}
+
 @media (max-width: 1200px) {
     footer{
         flex-direction: column;
@@ -427,6 +450,13 @@ a{
         justify-content: space-around;
         height: 100px;
         background-color: var(--main-bg-brown);
+    }
+
+    #contato-mobile{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
     }
 
 }
